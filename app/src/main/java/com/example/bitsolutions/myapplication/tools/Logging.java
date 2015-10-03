@@ -1,5 +1,7 @@
 package com.example.bitsolutions.myapplication.tools;
 
+import android.util.Log;
+
 /**
  * Created by maranya on 02/10/2015.
  */

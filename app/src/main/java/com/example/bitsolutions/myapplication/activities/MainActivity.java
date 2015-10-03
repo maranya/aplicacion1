@@ -1,5 +1,6 @@
 package com.example.bitsolutions.myapplication.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -9,6 +10,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.bitsolutions.myapplication.R;
+import com.example.bitsolutions.myapplication.tools.Logging;
+import pe.com.bitsolutions.dailytime.timetracking.activities.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         String locationSaved = sharedPrefs.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));
 
-        Toast.makeText(this, locationSaved, Toast.LENGTH_LONG);
+        Toast.makeText(this, locationSaved, Toast.LENGTH_LONG).show();
     }
 
     @Override
