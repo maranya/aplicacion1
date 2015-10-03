@@ -1,9 +1,12 @@
 package com.example.bitsolutions.myapplication.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.bitsolutions.myapplication.R;
 
@@ -21,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         Logging.v(LOG_TAG, "En el metodo onResume");
         super.onResume();
+
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        String locationSaved = sharedPrefs.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));
+
+        Toast.makeText(this, locationSaved, Toast.LENGTH_LONG);
     }
 
     @Override
