@@ -1,9 +1,11 @@
-package com.example.bitsolutions.myapplication;
+package com.example.bitsolutions.myapplication.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.bitsolutions.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
