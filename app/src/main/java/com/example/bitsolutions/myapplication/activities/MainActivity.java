@@ -9,6 +9,20 @@ import com.example.bitsolutions.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    String LOG_TAG = MainActivity.class.getSimpleName();
+
+    @Override
+    protected void onStart() {
+        Logging.v(LOG_TAG, "En el metodo onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Logging.v(LOG_TAG, "En el metodo onResume");
+        super.onResume();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
             return true;
         }
 
