@@ -1,4 +1,4 @@
-package pe.com.bitsolutions.dailytime.timetracking.activities;
+package com.example.bitsolutions.myapplication.activities;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
