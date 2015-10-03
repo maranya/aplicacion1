@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_logout) {
+            System.exit(0);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }
