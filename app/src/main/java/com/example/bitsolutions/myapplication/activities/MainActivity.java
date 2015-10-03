@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.bitsolutions.myapplication.R;
 import com.example.bitsolutions.myapplication.tools.Logging;
-import pe.com.bitsolutions.dailytime.timetracking.activities.SettingsActivity;
+import com.example.bitsolutions.myapplication.activities.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
